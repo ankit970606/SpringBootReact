@@ -1,7 +1,9 @@
 package org.kit.springbootrest;
 
 import org.kit.springbootrest.model.JobPost;
+import org.kit.springbootrest.model.User;
 import org.kit.springbootrest.service.JobService;
+import org.kit.springbootrest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -26,6 +28,8 @@ public class JobRestController {
 
     @Autowired
     private JobService service;
+
+
 
     @GetMapping("jobPosts")
     // @ResponseBody  IF WE ARE USING RESTCONTROLLER THEN NO NEED TO GIVE THIS ONLY WHEN WE ARE GIVING @CONTROLLER THEN ONLY WE NEED THIS 
